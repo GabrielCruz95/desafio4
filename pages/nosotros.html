@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Document</title>
 </head>
-<body>
+<body class="fondo"> <!-- FONDO DE LA PAGINA -->
     <div class="container-fluid">
         <!-- LOGO + NAV-->
         <header class="row">
             <div class="col-12 col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light gradiente">
                     <div class="container-fluid">
                         <a class="navbar-brand logo" href="#">
                             <img src="../assets/img/logo.png" alt="logo">
@@ -23,7 +23,7 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- CORRECION DE UBICACION DE LA NAV CON JUSTIFY-->
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
@@ -39,40 +39,36 @@
             </div>
         </header>
         <main class="row">
-            <div class="col-12 col-lg-12">
-                <h1>Bienvenidos</h1>
+            <!-- IMAGEN-->
+            <div class="col-12 col-lg-6">
+                <img src="../assets/img/nosotros.jpg" alt="Nosotros">
             </div>
-            <div class="col-12 col-lg-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="../assets/img/orto.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="../assets/img/nino.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="../assets/img/inicio.jpeg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+            <!--NOSOTROS Y CONTENIDO EN TEXTO-->
+            <div class="col-12 col-lg-6">
+                <h1>ODONTOLOGIA DIENTITOS</h1>
+                <h2>Trabajamos de manera integral</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius error possimus omnis hic dolore. At deserunt error quisquam, laborum sequi reprehenderit harum ad aliquam! Eius earum necessitatibus reprehenderit voluptate enim laborum, sequi adipisci quisquam, rem eum libero est quas commodi iure ipsam debitis expedita cupiditate neque. In iusto, delectus, eos modi id suscipit laudantium odio omnis accusamus, illo qui cumque quidem. Eius aliquam sed sequi animi consequuntur? Dolorem ducimus minima porro amet reiciendis iusto, similique delectus non sequi consequuntur odit voluptates vel! Et, at ipsum similique provident minima veritatis voluptatum quaerat voluptatem optio. Assumenda vitae deserunt, pariatur voluptatem fugiat magni. Atque voluptates quae, totam, fugiat at ipsum deserunt animi maxime dignissimos eaque harum culpa, illum debitis. Quis, eaque nisi. Sint delectus cupiditate possimus iusto dolore iure natus nihil sit consequatur sapiente, corporis sed quo molestias sunt, itaque rerum sequi nam! Illum quaerat, autem vitae cumque asperiores reprehenderit fugiat beatae perspiciatis?</p>
             </div>
         </main>
-        <footer class="row">
-
+        <footer class="row gradiente">
+            <!-- LOGO -->
+            <div class="col-6 col-lg-6 logo">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- CONTACTOS-->
+            <div class="col-12 col-lg-6 logo d-flex justify-content-end flex-row"><!--CAMBIOS PARA UBICAR BIEN LOS LOGOS DE REDES-->
+                <div class="d-flex flex-column">
+                    <h2>CONTACTOS</h2>
+                    <a href="#">
+                        <img src="../assets/img/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/whatsapp.png" alt="whatsapp">
+                    </a>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

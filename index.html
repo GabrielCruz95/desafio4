@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Document</title>
 </head>
-<body>
+<body class="fondo"> <!-- FONDO DE LA PAGINA -->
     <div class="container-fluid">
         <!-- LOGO + NAV-->
         <header class="row">
             <div class="col-12 col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light gradiente">
                     <div class="container-fluid">
-                        <a class="navbar-brand logo" href="#">
+                        <a class="navbar-brand logo" href="./index.html">
                             <img src="./assets/img/logo.png" alt="logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- CORRECION DE UBICACION DE LA NAV CON JUSTIFY-->
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -39,9 +39,7 @@
             </div>
         </header>
         <main class="row">
-            <div class="col-12 col-lg-12">
-                <h1>Bienvenidos</h1>
-            </div>
+            <!-- CARRUCEL CON IMAGENES-->
             <div class="col-12 col-lg-6">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -51,13 +49,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="./assets/img/orto.jpg" class="d-block w-100" alt="...">
+                            <img src="./assets/img/inicio.jpeg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                        <img src="./assets/img/nino.jpg" class="d-block w-100" alt="...">
+                            <img src="./assets/img/nosotros.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                        <img src="./assets/img/inicio.jpeg" class="d-block w-100" alt="...">
+                            <img src="./assets/img/nino.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,14 +68,35 @@
                     </button>
                 </div>
             </div>
+            <!--BIENVENIDA Y CONTENIDO EN TEXTO-->
             <div class="col-12 col-lg-6">
+                <h1>BIENVENIDOS A ODONTOLOGIA DIENTITOS</h1>
+                <h2>SU BOCA Y SU BOLSILLOS CON UNA SONRISA GRANDE</h2>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos similique sequi ad, itaque voluptas impedit amet labore aliquam excepturi ut dicta expedita asperiores architecto consequuntur atque corrupti? Non quas voluptatem optio iure ullam! Rerum eius ullam delectus cum molestias, recusandae illo minima sed adipisci alias autem eligendi quos quasi dolorem doloribus, necessitatibus dignissimos soluta, ab architecto dolores aut. Neque amet ex dolorum autem at, nam explicabo! Incidunt iste veniam et quam similique minus tempora, cum delectus asperiores obcaecati neque, sed expedita impedit nemo beatae aliquam nulla dolore eligendi odit praesentium sit enim laudantium animi adipisci. Repudiandae est omnis ad similique laudantium repellendus ab velit, reprehenderit ex, at impedit repellat, ea fugit distinctio nobis autem debitis? Aspernatur exercitationem esse praesentium ad debitis, asperiores a, fugit blanditiis laborum nulla sunt modi error quas eveniet. Eaque nisi qui natus aut corporis minus tempore. Enim modi pariatur exercitationem magnam itaque, officiis provident tempore reprehenderit praesentium natus quisquam saepe totam unde! Modi minus veritatis earum, inventore quia tenetur sunt? Sed, voluptatum? Tenetur magni aspernatur sapiente hic voluptatibus exercitationem maxime ea repellat reiciendis, dicta laborum delectus harum reprehenderit, quam error odit! Laudantium officiis maiores harum minima nemo doloribus earum, facilis, ex veniam beatae voluptates fugit laborum.
                 </p>
             </div>
         </main>
-        <footer class="row">
-
+        <!-- FOOTER -->
+        <footer class="row gradiente">
+            <!-- LOGO -->
+            <div class="col-6 col-lg-6 logo">
+                <a href="./index.html">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- CONTACTOS-->
+            <div class="col-12 col-lg-6 logo d-flex justify-content-end flex-row"><!--CAMBIOS PARA UBICAR BIEN LOS LOGOS DE REDES-->
+                <div class="d-flex flex-column">
+                    <h2>CONTACTOS</h2>
+                    <a href="#">
+                        <img src="./assets/img/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/whatsapp.png" alt="whatsapp">
+                    </a>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

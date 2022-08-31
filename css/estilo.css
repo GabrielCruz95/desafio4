@@ -1,6 +1,6 @@
 /* Agregar gradiente a la nav y logo */
-.bg-light{
-background-image: linear-gradient(to right,blue,rgb(0, 255, 247))
+.gradiente{
+background-image: linear-gradient(to right,rgba(0, 0, 255, 0.848),rgba(0, 255, 247, 0.93))
 }
 
 /*Correccion de tamaño de imagen*/
@@ -11,4 +11,12 @@ img {
 /* Tamaño de logo */
 .logo img{
     height: 100px;
+}
+/* fondo de la web */
+.fondo{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/fonde.jpg);
+    background-attachment: fixed;
 }
